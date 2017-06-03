@@ -29,7 +29,7 @@ local multiply = marathomaton.multiply
 
 -- easy way: every machine in refining/metallurgy -> 4x upgrade AND .5x stone brick, AND
 -- ore silos 3x stone brick, AND
--- flare stack: 5x steel,
+-- flare stack stay the same; only used for discarding resources, and otherwise more expensive than chem plants.
 -- every building in barreling/pumps: 16x inputs
 
 
@@ -94,6 +94,3 @@ for recipe_name, recipe_obj in pairs(data.raw.recipe) do
     end
   end
 end
-
-multiply('steel-plate', 5.0, i2r({'angels-flare-stack', 'flare-stack'}))
-
