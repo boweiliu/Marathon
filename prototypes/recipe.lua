@@ -12,6 +12,7 @@ local recipes
 marathomaton.modify_all_yields(0.5, 'sulfur')
 marathomaton.modify_all_yields(0.5, 'lubricant')
 multiply('__inputs__', 2.0, i2r({'solid-fuel'}))
+multiply('__inputs__', 2.0, i2r({'enriched-fuel'}))
 marathomaton.modify_all_recipes('plastic-bar', 2)
 
 -- slow down some select intermediates
